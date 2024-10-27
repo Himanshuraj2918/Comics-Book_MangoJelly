@@ -10,7 +10,7 @@ import {
 const router = Router();
 
 router.route("/add-book").post(addBook);
-router.route("/update-book/:bookId").post(updateDetails);
+router.route("/update-book/:bookId").patch(updateDetails);
 router.route("/delete-book/:bookId").delete(deleteBook);
 router.route("/all-books").get(allBooks);
 router.route("/book-details/:bookId").get(bookDetails);
